@@ -15,6 +15,9 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 .day-layout{display:grid;gap:18px}.timeline{display:grid;gap:0}.stop{display:grid;grid-template-columns:72px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}.stop:last-child{border-bottom:0}.time{font-weight:900;color:var(--sea)}.stop h4{margin:0 0 3px;font-size:17px}.stop p{margin:0;color:var(--muted);font-size:14px}
 .photo{aspect-ratio:9/12;object-fit:cover}.photo-wide{aspect-ratio:16/10;object-fit:cover}.photo-square{aspect-ratio:1/1;object-fit:cover}.note{background:var(--sand);border-left:5px solid var(--accent);border-radius:16px;padding:15px 17px;margin-top:14px}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:7px 10px;background:var(--sky);color:var(--sea);border-radius:999px;font-size:12px;font-weight:800}
 .gallery{display:grid;grid-auto-flow:column;grid-auto-columns:84%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.gallery figure{scroll-snap-align:start;margin:0;background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px rgba(18,67,86,.07)}.gallery img{aspect-ratio:9/12;object-fit:cover}.gallery figcaption{padding:11px 13px;font-size:13px;color:var(--muted);font-weight:700}.spot-grid{display:grid;gap:16px}.spot .photo{aspect-ratio:9/11}.spot .pad{padding:18px}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:9px 0}.meta span{padding:6px 9px;background:#eef6f8;color:var(--sea);border-radius:999px;font-size:12px;font-weight:800}
+.mapbtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;margin-top:12px;padding:11px 14px;border-radius:14px;background:var(--sea);color:#fff;font-weight:900;font-size:13px;box-shadow:0 8px 18px rgba(11,114,133,.18)}
+.daynav{display:flex;gap:10px;justify-content:space-between;margin-top:20px}.daynav a{flex:1;text-align:center;padding:12px 14px;border-radius:16px;background:#fff;border:1px solid var(--line);font-weight:900;color:var(--sea)}
+.day1 .time{color:#0b7285}.day2 .time{color:#447c69}.day3 .time{color:#9a6634}.day1 .stop{border-left:3px solid rgba(11,114,133,.18);padding-left:12px}.day2 .stop{border-left:3px solid rgba(68,124,105,.18);padding-left:12px}.day3 .stop{border-left:3px solid rgba(154,102,52,.18);padding-left:12px}
 .section-band{background:linear-gradient(180deg,#f7fbfc,#eef6f8)}.credits{font-size:12px;color:var(--muted);margin-top:20px}footer{padding:34px 0 50px;color:var(--muted);text-align:center}
 @media(min-width:760px){.quick{grid-template-columns:repeat(4,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}.day-layout{grid-template-columns:1.05fr .95fr;align-items:start}.spot-grid{grid-template-columns:repeat(3,1fr)}.gallery{grid-auto-columns:31%}.gallery img{aspect-ratio:4/5}.photo{aspect-ratio:4/5}.stop{grid-template-columns:92px 1fr}}
 </style>
@@ -22,7 +25,7 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 <body>
 <header class="hero" id="top">
 <div class="wrap inner">
-<div class="badge">9:16 手機旅遊手冊｜加強照片完整版</div>
+<div class="badge">9:16 手機旅遊手冊｜照片・導航・時間軸完整版</div>
 <h1>花蓮三天兩夜<br>慢慢玩・好好看海</h1>
 <p>台中 06:00 出發｜兩晚住宿花蓮富野渡假酒店｜北花蓮、縱谷湖景、台 11 東海岸、花蓮市區一次收進行程。</p>
 <div class="quick">
@@ -61,7 +64,7 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 <figure><img src="https://uploads.posu.tw/73/738/s202403041810310.jpg" alt="將軍府1936"><figcaption>將軍府 1936｜夜色日式建築</figcaption></figure>
 </div></div></section>
 
-<section id="day1"><div class="wrap">
+<section id="day1" class="day1"><div class="wrap">
 <div class="eyebrow">Day 1</div><h2 class="title">北花蓮山海 × 老街 × 夜景</h2>
 <div class="day-layout">
 <div class="card pad timeline">
@@ -75,8 +78,8 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 <div class="stop"><div class="time">18:00</div><div><h4>向陽山茶舖</h4><p>晚餐＋黃昏到入夜的城市夜景。</p></div></div>
 </div>
 <div class="grid">
-<article class="card"><img class="photo" src="https://pgw.udn.com.tw/gw/photo.php?exp=3600&sh=0&sw=0&u=https%3A%2F%2Fuc.udn.com.tw%2Fphoto%2F2025%2F07%2F01%2F2%2F32424937.jpg&x=0&y=0" alt="花蓮富野渡假酒店"><div class="pad"><h3>兩晚都住富野</h3><p>固定同一間飯店，不用搬行李；第一天下午先休息，晚上再上山看夜景。</p></div></article>
-<article class="card"><img class="photo-wide" src="https://cdn.walkerland.com.tw/images/upload/poi/p12696/m70152/c89cf362904020659b39ace1071877d474cb5632.png" alt="向陽山茶舖"><div class="pad"><h3>第一晚壓軸：向陽山茶舖</h3><p>建議傍晚前抵達，從夕色一路看到城市燈火。</p></div></article>
+<article class="card"><img class="photo" src="https://pgw.udn.com.tw/gw/photo.php?exp=3600&sh=0&sw=0&u=https%3A%2F%2Fuc.udn.com.tw%2Fphoto%2F2025%2F07%2F01%2F2%2F32424937.jpg&x=0&y=0" alt="花蓮富野渡假酒店"><div class="pad"><h3>兩晚都住富野</h3><p>固定同一間飯店，不用搬行李；第一天下午先休息，晚上再上山看夜景。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E8%8A%B1%E8%93%AE%E5%AF%8C%E9%87%8E%E6%B8%A1%E5%81%87%E9%85%92%E5%BA%97" target="_blank" rel="noopener">📍 導航到富野</a></div></article>
+<article class="card"><img class="photo-wide" src="https://cdn.walkerland.com.tw/images/upload/poi/p12696/m70152/c89cf362904020659b39ace1071877d474cb5632.png" alt="向陽山茶舖"><div class="pad"><h3>第一晚壓軸：向陽山茶舖</h3><p>建議傍晚前抵達，從夕色一路看到城市燈火。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E5%90%91%E9%99%BD%E5%B1%B1%E8%8C%B6%E8%88%96%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 導航到向陽山茶舖</a></div></article>
 </div>
 </div>
 <div class="gallery" style="margin-top:18px">
@@ -85,14 +88,15 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 <figure><img src="https://i0.wp.com/img.journey.tw/20190616171218_87.jpg?quality=100&resize=1100%2C734&ssl=1" alt="新城老街"><figcaption>新城老街｜佳興冰果室</figcaption></figure>
 <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Xincheng%20Catholic%20Church.jpg?width=1200" alt="新城天主堂"><figcaption>新城天主堂｜方舟造型教堂</figcaption></figure>
 </div>
+<div class="daynav"><a href="#overview">← 行程總覽</a><a href="#day2">Day 2 →</a></div>
 </div></section>
 
-<section id="day2" class="section-band"><div class="wrap">
+<section id="day2" class="section-band day2"><div class="wrap">
 <div class="eyebrow">Day 2</div><h2 class="title">縱谷湖景 × 台 11 東海岸</h2>
 <div class="day-layout">
 <div class="grid">
-<article class="card"><img class="photo" src="https://ak-d.tripcdn.com/images/1mi6c224x95uyvh3b47BC.jpg?proc=source%2Ftrip" alt="鯉魚潭"><div class="pad"><h3>鯉魚潭</h3><div class="meta"><span>停留 1–1.5 小時</span><span>湖景散步</span></div><p>湖光山色很適合早上慢慢走，也適合拍倒影與環湖景觀。</p></div></article>
-<article class="card"><img class="photo-wide" src="https://qqblog.tw/wp-content/uploads/2025/01/UTAA036.jpg" alt="雲山水"><div class="pad"><h3>雲山水</h3><div class="meta"><span>停留約 1 小時</span><span>拍照重點</span></div><p>草地、湖面、落羽松與遠山構成夢幻畫面。</p></div></article>
+<article class="card"><img class="photo" src="https://ak-d.tripcdn.com/images/1mi6c224x95uyvh3b47BC.jpg?proc=source%2Ftrip" alt="鯉魚潭"><div class="pad"><h3>鯉魚潭</h3><div class="meta"><span>停留 1–1.5 小時</span><span>湖景散步</span></div><p>湖光山色很適合早上慢慢走，也適合拍倒影與環湖景觀。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E9%AF%89%E9%AD%9A%E6%BD%AD%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card"><img class="photo-wide" src="https://qqblog.tw/wp-content/uploads/2025/01/UTAA036.jpg" alt="雲山水"><div class="pad"><h3>雲山水</h3><div class="meta"><span>停留約 1 小時</span><span>拍照重點</span></div><p>草地、湖面、落羽松與遠山構成夢幻畫面。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E9%9B%B2%E5%B1%B1%E6%B0%B4%E5%A4%A2%E5%B9%BB%E6%B9%96%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
 </div>
 <div class="card pad timeline">
 <div class="stop"><div class="time">08:20</div><div><h4>富野出發</h4><p>早餐後再出門，不必太早趕路。</p></div></div>
@@ -111,9 +115,10 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 <figure><img src="https://eng.taiwan.net.tw/att/1/big_scenic_spots/pic_R68_20.jpg" alt="石梯坪"><figcaption>石梯坪｜海蝕平台</figcaption></figure>
 <figure><img src="https://isabellalife.tw/uploads/2026/02/13/7da2e2c88dc3f761ed7b663c46200ea5.webp" alt="東大門夜市"><figcaption>東大門夜市｜第二晚自由安排</figcaption></figure>
 </div>
+<div class="daynav"><a href="#day1">← Day 1</a><a href="#day3">Day 3 →</a></div>
 </div></section>
 
-<section id="day3"><div class="wrap">
+<section id="day3" class="day3"><div class="wrap">
 <div class="eyebrow">Day 3</div><h2 class="title">花蓮市區人文 × 悠閒返程</h2>
 <div class="day-layout">
 <div class="card pad timeline">
@@ -127,8 +132,8 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 <div class="stop"><div class="time">18:00–19:30</div><div><h4>返回台中</h4><p>視蘇花、國 5 車流調整。</p></div></div>
 </div>
 <div class="grid">
-<article class="card"><img class="photo" src="https://pic.pimg.tw/bbandpp/1601184029-3093741628-g_n.jpg?v=1601184035" alt="松園別館"><div class="pad"><h3>松園別館</h3><p>百年松林與灰白歷史建築，是第三天最舒服的開場。</p></div></article>
-<article class="card"><img class="photo-wide" src="https://pgw.udn.com.tw/gw/photo.php?exp=3600&sh=0&sw=0&u=https%3A%2F%2Fuc.udn.com.tw%2Fphoto%2F2024%2F04%2F03%2Fdraft%2F29357730.jpg&x=0&y=0" alt="將軍府1936"><div class="pad"><h3>將軍府 1936</h3><p>黃昏與白天都很有日式小京都氛圍，庭園也很好拍。</p></div></article>
+<article class="card"><img class="photo" src="https://pic.pimg.tw/bbandpp/1601184029-3093741628-g_n.jpg?v=1601184035" alt="松園別館"><div class="pad"><h3>松園別館</h3><p>百年松林與灰白歷史建築，是第三天最舒服的開場。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%BE%E5%9C%92%E5%88%A5%E9%A4%A8%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card"><img class="photo-wide" src="https://pgw.udn.com.tw/gw/photo.php?exp=3600&sh=0&sw=0&u=https%3A%2F%2Fuc.udn.com.tw%2Fphoto%2F2024%2F04%2F03%2Fdraft%2F29357730.jpg&x=0&y=0" alt="將軍府1936"><div class="pad"><h3>將軍府 1936</h3><p>黃昏與白天都很有日式小京都氛圍，庭園也很好拍。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E5%B0%87%E8%BB%8D%E5%BA%9C1936%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
 </div>
 </div>
 <div class="gallery" style="margin-top:18px">
@@ -137,21 +142,22 @@ section{padding:54px 0}.eyebrow{text-transform:uppercase;letter-spacing:.16em;co
 <figure><img src="https://uploads.posu.tw/73/738/s202403041810310.jpg" alt="將軍府1936"><figcaption>將軍府 1936｜木造建築夜色</figcaption></figure>
 <figure><img src="https://pgw.udn.com.tw/gw/photo.php?exp=3600&sh=0&sw=0&u=https%3A%2F%2Fuc.udn.com.tw%2Fphoto%2F2024%2F04%2F03%2Fdraft%2F29357730.jpg&x=0&y=0" alt="將軍府1936庭園"><figcaption>將軍府 1936｜庭園步道</figcaption></figure>
 </div>
+<div class="daynav"><a href="#day2">← Day 2</a><a href="#spots">全部景點圖庫 →</a></div>
 </div></section>
 
 <section id="spots" class="section-band"><div class="wrap">
 <div class="eyebrow">Spot Guide</div><h2 class="title">全部重點景點｜照片＋停留建議</h2>
 <div class="spot-grid">
-<article class="card spot"><img class="photo" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/31/7e/b8/daka.jpg?h=-1&s=1&w=1200" alt="台泥DAKA"><div class="pad"><h3>台泥 DAKA</h3><div class="meta"><span>40–50 分</span><span>Day 1</span></div><p>和平花、園區建築與山景；也適合補給與休息。</p></div></article>
-<article class="card spot"><img class="photo" src="https://cdn.kikinote.net/gallery/travel/7cc647e958efe000b76c9f5b837fb9b0.jpeg" alt="清水斷崖"><div class="pad"><h3>清水斷崖</h3><div class="meta"><span>40–50 分</span><span>Day 1</span></div><p>山壁直落太平洋，適合拍廣角大景。</p></div></article>
-<article class="card spot"><img class="photo" src="https://i0.wp.com/img.journey.tw/20190616171218_87.jpg?quality=100&resize=1100%2C734&ssl=1" alt="新城老街"><div class="pad"><h3>新城老街</h3><div class="meta"><span>1.5–2 小時</span><span>午餐</span></div><p>老街散步、在地小吃、佳興檸檬汁一起安排。</p></div></article>
-<article class="card spot"><img class="photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Xincheng%20Catholic%20Church.jpg?width=1200" alt="新城天主堂"><div class="pad"><h3>新城天主堂</h3><div class="meta"><span>30–40 分</span><span>人文</span></div><p>諾亞方舟造型教堂與日治神社遺構共存。</p></div></article>
-<article class="card spot"><img class="photo" src="https://pgw.udn.com.tw/gw/photo.php?exp=3600&sh=0&sw=0&u=https%3A%2F%2Fuc.udn.com.tw%2Fphoto%2F2025%2F07%2F01%2F2%2F32424937.jpg&x=0&y=0" alt="富野渡假酒店"><div class="pad"><h3>花蓮富野渡假酒店</h3><div class="meta"><span>2 晚同住</span></div><p>固定住宿讓整趟行程更輕鬆。</p></div></article>
-<article class="card spot"><img class="photo" src="https://cdn.walkerland.com.tw/images/upload/poi/p12696/m70152/c89cf362904020659b39ace1071877d474cb5632.png" alt="向陽山茶舖"><div class="pad"><h3>向陽山茶舖</h3><div class="meta"><span>晚餐＋夜景</span></div><p>第一晚壓軸，建議黃昏前抵達。</p></div></article>
+<article class="card spot"><img class="photo" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/31/7e/b8/daka.jpg?h=-1&s=1&w=1200" alt="台泥DAKA"><div class="pad"><h3>台泥 DAKA</h3><div class="meta"><span>40–50 分</span><span>Day 1</span></div><p>和平花、園區建築與山景；也適合補給與休息。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E6%B3%A5DAKA%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card spot"><img class="photo" src="https://cdn.kikinote.net/gallery/travel/7cc647e958efe000b76c9f5b837fb9b0.jpeg" alt="清水斷崖"><div class="pad"><h3>清水斷崖</h3><div class="meta"><span>40–50 分</span><span>Day 1</span></div><p>山壁直落太平洋，適合拍廣角大景。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E6%96%B7%E5%B4%96%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card spot"><img class="photo" src="https://i0.wp.com/img.journey.tw/20190616171218_87.jpg?quality=100&resize=1100%2C734&ssl=1" alt="新城老街"><div class="pad"><h3>新城老街</h3><div class="meta"><span>1.5–2 小時</span><span>午餐</span></div><p>老街散步、在地小吃、佳興檸檬汁一起安排。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%9F%8E%E8%80%81%E8%A1%97%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card spot"><img class="photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Xincheng%20Catholic%20Church.jpg?width=1200" alt="新城天主堂"><div class="pad"><h3>新城天主堂</h3><div class="meta"><span>30–40 分</span><span>人文</span></div><p>諾亞方舟造型教堂與日治神社遺構共存。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E5%9F%8E%E5%A4%A9%E4%B8%BB%E5%A0%82%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card spot"><img class="photo" src="https://pgw.udn.com.tw/gw/photo.php?exp=3600&sh=0&sw=0&u=https%3A%2F%2Fuc.udn.com.tw%2Fphoto%2F2025%2F07%2F01%2F2%2F32424937.jpg&x=0&y=0" alt="富野渡假酒店"><div class="pad"><h3>花蓮富野渡假酒店</h3><div class="meta"><span>2 晚同住</span></div><p>固定住宿讓整趟行程更輕鬆。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E8%8A%B1%E8%93%AE%E5%AF%8C%E9%87%8E%E6%B8%A1%E5%81%87%E9%85%92%E5%BA%97" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card spot"><img class="photo" src="https://cdn.walkerland.com.tw/images/upload/poi/p12696/m70152/c89cf362904020659b39ace1071877d474cb5632.png" alt="向陽山茶舖"><div class="pad"><h3>向陽山茶舖</h3><div class="meta"><span>晚餐＋夜景</span></div><p>第一晚壓軸，建議黃昏前抵達。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E5%90%91%E9%99%BD%E5%B1%B1%E8%8C%B6%E8%88%96%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
 <article class="card spot"><img class="photo" src="https://ak-d.tripcdn.com/images/1mi6c224x95uyvh3b47BC.jpg?proc=source%2Ftrip" alt="鯉魚潭"><div class="pad"><h3>鯉魚潭</h3><div class="meta"><span>1–1.5 小時</span><span>Day 2</span></div><p>湖泊、群山與悠閒散步。</p></div></article>
 <article class="card spot"><img class="photo" src="https://qqblog.tw/wp-content/uploads/2025/01/UTAA036.jpg" alt="雲山水"><div class="pad"><h3>雲山水</h3><div class="meta"><span>1–1.2 小時</span><span>Day 2</span></div><p>夢幻湖色與草地景觀，非常適合人物照。</p></div></article>
-<article class="card spot"><img class="photo" src="https://eng.taiwan.net.tw/att/1/big_scenic_spots/pic_R68_20.jpg" alt="石梯坪"><div class="pad"><h3>石梯坪</h3><div class="meta"><span>1–1.5 小時</span><span>Day 2</span></div><p>海蝕平台、壺穴與東海岸岩岸地形。</p></div></article>
-<article class="card spot"><img class="photo" src="https://isabellalife.tw/uploads/2026/02/13/7da2e2c88dc3f761ed7b663c46200ea5.webp" alt="東大門夜市"><div class="pad"><h3>東大門夜市</h3><div class="meta"><span>第二晚彈性安排</span></div><p>若第二天還有體力，可作晚餐與夜遊收尾。</p></div></article>
+<article class="card spot"><img class="photo" src="https://eng.taiwan.net.tw/att/1/big_scenic_spots/pic_R68_20.jpg" alt="石梯坪"><div class="pad"><h3>石梯坪</h3><div class="meta"><span>1–1.5 小時</span><span>Day 2</span></div><p>海蝕平台、壺穴與東海岸岩岸地形。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E7%9F%B3%E6%A2%AF%E5%9D%AA%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
+<article class="card spot"><img class="photo" src="https://isabellalife.tw/uploads/2026/02/13/7da2e2c88dc3f761ed7b663c46200ea5.webp" alt="東大門夜市"><div class="pad"><h3>東大門夜市</h3><div class="meta"><span>第二晚彈性安排</span></div><p>若第二天還有體力，可作晚餐與夜遊收尾。</p><a class="mapbtn" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E5%A4%A7%E9%96%80%E5%A4%9C%E5%B8%82%20%E8%8A%B1%E8%93%AE" target="_blank" rel="noopener">📍 Google 地圖導航</a></div></article>
 <article class="card spot"><img class="photo" src="https://pic.pimg.tw/bbandpp/1601184029-3093741628-g_n.jpg?v=1601184035" alt="松園別館"><div class="pad"><h3>松園別館</h3><div class="meta"><span>50–60 分</span><span>Day 3</span></div><p>松林、拱廊與太平洋視野。</p></div></article>
 <article class="card spot"><img class="photo" src="https://uploads.posu.tw/73/738/s202403041810310.jpg" alt="將軍府1936"><div class="pad"><h3>將軍府 1936</h3><div class="meta"><span>約 1 小時</span><span>Day 3</span></div><p>日式宿舍群、庭園與文創聚落。</p></div></article>
 </div>
